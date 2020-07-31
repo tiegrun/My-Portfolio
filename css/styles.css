@@ -169,9 +169,9 @@ h1{
   height: var(--primary-height);
   /* min-height: 300px; */
   margin-top: var(--primary-margin);
-  background: linear-gradient(to bottom, var(--color-light-slate-blue) 0%, 
-              var(--color-medium-slate-blue) 0%, 
-              var(--color-cornflower-blue));           
+  background: linear-gradient(to bottom, var(--color-light-slate-blue) 0%,
+              var(--color-medium-slate-blue) 0%,
+              var(--color-cornflower-blue));
 }
 
 #contactPlace p{
@@ -236,14 +236,14 @@ fieldset .formLine:nth-child(2){
 
 fieldset input[type="submit"]{
   margin: 2px auto;
-  padding: 8px 32px; 
+  padding: 8px 32px;
   color: var(--color-white);
   font-size: var(--primary-font-size);
   border: none;
   border-radius: 4px;
   outline: none;
-  background: linear-gradient(to bottom, var(--color-light-slate-blue) 0%, 
-              var(--color-medium-slate-blue) 30%, 
+  background: linear-gradient(to bottom, var(--color-light-slate-blue) 0%,
+              var(--color-medium-slate-blue) 30%,
               var(--color-cornflower-blue) 100%);
   box-shadow: 13px 13px 17px -7px var(--color-melanzane);
   cursor: pointer;
@@ -251,8 +251,8 @@ fieldset input[type="submit"]{
 
 fieldset input[type="submit"]:hover{
   color : var(--color-white-smoke);
-  background: linear-gradient(135deg, var(--color-cornflower-blue) 0%, 
-              var(--color-medium-slate-blue) 50%, 
+  background: linear-gradient(135deg, var(--color-cornflower-blue) 0%,
+              var(--color-medium-slate-blue) 50%,
               var(--color-light-slate-blue) 100%);
 }
 
@@ -281,7 +281,7 @@ fieldset input[type="submit"]:active{
 
 #buttons button{
   margin: 12px 18px;
-  padding: 8px 32px; 
+  padding: 8px 32px;
   color: var(--color-black);
   font-size: var(--primary-font-size);
   font-weight: var(--primary-font-weight);
@@ -359,12 +359,12 @@ fieldset input[type="submit"]:active{
 @keyframes cloudMove{
   0%{
     transform: translate(800px, -10px);
-    
+
     }
 
 100%{
     transform: translate(-800px, -10px);
-    
+
   }
 }
 
@@ -382,8 +382,8 @@ fieldset input[type="submit"]:active{
   height: 82vh;
   min-height: 300px;
   margin-top: var(--primary-margin);
-  background: linear-gradient(to bottom, var(--color-light-slate-blue) 0%, 
-              var(--color-medium-slate-blue) 0%, 
+  background: linear-gradient(to bottom, var(--color-light-slate-blue) 0%,
+              var(--color-medium-slate-blue) 0%,
               var(--color-cornflower-blue));
 }
 
@@ -414,7 +414,7 @@ fieldset input[type="submit"]:active{
 #aboutMe .myStory:nth-child(2){
   width: 50%;
 }
-  
+
 .myStory h2{
   margin-top: 9px;
 }
@@ -473,8 +473,8 @@ th{
   justify-content: space-evenly;
   /* padding: 10px; */
   align-content: space-around;
-  background: linear-gradient(to bottom, var(--color-light-slate-blue) 0%, 
-              var(--color-medium-slate-blue) 0%, 
+  background: linear-gradient(to bottom, var(--color-light-slate-blue) 0%,
+              var(--color-medium-slate-blue) 0%,
               var(--color-cornflower-blue));
 }
 
@@ -564,7 +564,7 @@ footer p{
   }
 
   nav a:link{
-    font-size: 14px;    
+    font-size: 14px;
   }
 
   main{
@@ -589,11 +589,11 @@ footer p{
   }
 
   /* home page end*/
-  
+
   #contactPlace{
     height: 84vh;
   }
-  
+
   #newForm fieldset{
     width: 450px;
     height: 450px;
@@ -601,7 +601,7 @@ footer p{
 
   legend{
     font-size: 1.4rem;
-    
+
   }
 
   #about{
@@ -610,7 +610,7 @@ footer p{
     align-items: center;
     width: var(--full-width);
     height: var(--primary-height);
-    
+
   }
 
   #aboutMe{
@@ -622,7 +622,7 @@ footer p{
     flex-direction: column;
     align-items: center;
     width: 95%;
-    
+
   }
   #aboutMe .myStory:nth-child(2){
     width: 95%;
@@ -634,7 +634,7 @@ footer p{
     margin-top: 4px;
     font-size: var(--primary-font-size);
   }
-  
+
   .myStory p{
     margin: 15px 10px;
     text-align: justify;
@@ -677,7 +677,7 @@ footer p{
     width: 70%;
     height: 80px;
   }
-  
+
   #myTown{
     display: none;
   }
