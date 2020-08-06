@@ -187,20 +187,20 @@ h1{
           flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+          justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: auto;
+  height: 1400px;
   /* min-height: 300px; */
   margin-top: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6D75FA), 
-              color-stop(0%, #746DF0), 
+  background: -webkit-gradient(linear, left top, left bottom, from(#6D75FA),
+              color-stop(0%, #746DF0),
               to(#5194FA));
-  background: linear-gradient(to bottom, #6D75FA 0%, 
-              #746DF0 0%, 
-              #5194FA);           
+  background: linear-gradient(to bottom, #6D75FA 0%,
+              #746DF0 0%,
+              #5194FA);
 }
 
 #contactPlace p{
@@ -272,17 +272,17 @@ fieldset .formLine:nth-child(2){
 
 fieldset input[type="submit"]{
   margin: 2px auto;
-  padding: 8px 32px; 
+  padding: 8px 32px;
   color: #fff;
   font-size: 18px;
   border: none;
   border-radius: 4px;
   outline: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6D75FA), 
-              color-stop(30%, #746DF0), 
+  background: -webkit-gradient(linear, left top, left bottom, from(#6D75FA),
+              color-stop(30%, #746DF0),
               to(#5194FA));
-  background: linear-gradient(to bottom, #6D75FA 0%, 
-              #746DF0 30%, 
+  background: linear-gradient(to bottom, #6D75FA 0%,
+              #746DF0 30%,
               #5194FA 100%);
   -webkit-box-shadow: 13px 13px 17px -7px #332A2F;
           box-shadow: 13px 13px 17px -7px #332A2F;
@@ -291,8 +291,8 @@ fieldset input[type="submit"]{
 
 fieldset input[type="submit"]:hover{
   color : #EBEBEB;
-  background: linear-gradient(135deg, #5194FA 0%, 
-              #746DF0 50%, 
+  background: linear-gradient(135deg, #5194FA 0%,
+              #746DF0 50%,
               #6D75FA 100%);
 }
 
@@ -323,7 +323,7 @@ fieldset input[type="submit"]:active{
 
 #buttons button{
   margin: 12px 18px;
-  padding: 8px 32px; 
+  padding: 8px 32px;
   color: #000;
   font-size: 18px;
   font-weight: bold;
@@ -456,13 +456,13 @@ fieldset input[type="submit"]:active{
   0%{
     -webkit-transform: translate(800px, -10px);
             transform: translate(800px, -10px);
-    
+
     }
 
 100%{
     -webkit-transform: translate(-800px, -10px);
             transform: translate(-800px, -10px);
-    
+
   }
 }
 
@@ -470,13 +470,13 @@ fieldset input[type="submit"]:active{
   0%{
     -webkit-transform: translate(800px, -10px);
             transform: translate(800px, -10px);
-    
+
     }
 
 100%{
     -webkit-transform: translate(-800px, -10px);
             transform: translate(-800px, -10px);
-    
+
   }
 }
 
@@ -500,15 +500,15 @@ fieldset input[type="submit"]:active{
   height: 82vh;
   min-height: 300px;
   margin-top: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6D75FA), 
-              color-stop(0%, #746DF0), 
+  background: -webkit-gradient(linear, left top, left bottom, from(#6D75FA),
+              color-stop(0%, #746DF0),
               to(#5194FA));
-  background: linear-gradient(to bottom, #6D75FA 0%, 
-              #746DF0 0%, 
-              #5194FA);
+  background: linear-gradient(to bottom, #6D75FA 0%,
+              #746DF0 0%,
+              #5194FA);            
 }
 
-#about h1{
+#about h1, #contactPlace h1{
   color: #fff;
   background: #000;
   padding: 6px 8px 40px 8px;
@@ -543,7 +543,7 @@ fieldset input[type="submit"]:active{
 #aboutMe .myStory:nth-child(2){
   width: 50%;
 }
-  
+
 .myStory h2{
   margin-top: 9px;
 }
@@ -626,11 +626,11 @@ th{
   /* padding: 10px; */
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  background: -webkit-gradient(linear, left top, left bottom, from(#6D75FA), 
-              color-stop(0%, #746DF0), 
+  background: -webkit-gradient(linear, left top, left bottom, from(#6D75FA),
+              color-stop(0%, #746DF0),
               to(#5194FA));
-  background: linear-gradient(to bottom, #6D75FA 0%, 
-              #746DF0 0%, 
+  background: linear-gradient(to bottom, #6D75FA 0%,
+              #746DF0 0%,
               #5194FA);
 }
 
@@ -812,7 +812,7 @@ footer p{
   }
 
   nav a:link{
-    font-size: 14px;    
+    font-size: 14px;
   }
 
   main{
@@ -837,11 +837,11 @@ footer p{
   }
 
   /* home page end*/
-  
+
   #contactPlace{
     height: 84vh;
   }
-  
+
   #newForm fieldset{
     width: 450px;
     height: 450px;
@@ -849,7 +849,10 @@ footer p{
 
   legend{
     font-size: 1.4rem;
-    
+  }
+
+  label{
+    padding-left: 5px;
   }
 
   #about{
@@ -864,7 +867,7 @@ footer p{
             align-items: center;
     width: 100%;
     height: auto;
-    
+
   }
 
   #aboutMe{
@@ -886,7 +889,7 @@ footer p{
         -ms-flex-align: center;
             align-items: center;
     width: 95%;
-    
+
   }
   #aboutMe .myStory:nth-child(2){
     width: 95%;
@@ -898,7 +901,7 @@ footer p{
     margin-top: 4px;
     font-size: 18px;
   }
-  
+
   .myStory p{
     margin: 15px 10px;
     text-align: justify;
@@ -955,7 +958,7 @@ footer p{
     width: 70%;
     height: 80px;
   }
-  
+
   #myTown{
     display: none;
   }
