@@ -140,8 +140,8 @@ main{
 
 #genImg img{
   width: 220px;
-  height: 220px;
-  border-radius: 50%;
+  height: 305px;
+  border-radius: 10px;
 }
 
 #content{
@@ -178,7 +178,7 @@ h1{
 
 /* home page End*/
 
-/* contact page Start , exercise 1.3*/
+/* contact page Start */
 
 #contactPlace{
   -webkit-box-orient: vertical;
@@ -203,78 +203,58 @@ h1{
               #5194FA);
 }
 
-#contactPlace p{
-  line-height: 30px;
-}
-
-#contactPlace p:first-child{
-  font-size: 32px;
-  font-weight: bold;
-}
-
-button{
-  margin-top: 8px;
-  padding: 4px 8px;
-}
-
-/* contact page End, exercise 1.3*/
-
-/* contact page Start , exercise 1.4*/
-
-#newForm{
-  width: auto;
-  height: auto;
+#myContact{
+  width: 100%;
+  height: 82vh;
+  justify-content: center;
+  align-items: center;
   margin-top: 5px;
-  margin-bottom: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6D75FA),
+              color-stop(0%, #746DF0),
+              to(#5194FA));
+  background: linear-gradient(to bottom, #6D75FA 0%,
+              #746DF0 0%,
+              #5194FA);
 }
 
-#newForm fieldset{
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 500px;
+#personalContacts{
+  flex-direction: column;
+  align-items: center;
+  
+  width: 600px;
   height: 450px;
-  border: none;
   border-radius: 8px;
   -webkit-box-shadow: 13px 13px 43px -6px #332A2F;
           box-shadow: 13px 13px 43px -6px #332A2F;
   background: #EBEBEB;
-  position: relative;
+  overflow: hidden;
 }
+
+#newestForm{
+  width: 95%;
+  height: 85%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  margin-top: 25px;
+  border: none;
+}
+
 
 legend{
   font-size: 1.8rem;
   font-weight: bold;
   color: #000;
-  position: absolute;
-  top: 10px;;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.formLine{
-  /* flex-direction: row; */
-  width: 450px;
-  height: 50px;
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 10px auto;
-}
-
-fieldset .formLine:nth-child(2){
-  margin-top: 80px;
+  margin-bottom: 20px;
+  border: none;
 }
 
 fieldset input[type="submit"]{
   margin: 2px auto;
-  padding: 8px 32px;
+  padding: 8px 16px;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   border: none;
   border-radius: 4px;
   outline: none;
@@ -287,6 +267,7 @@ fieldset input[type="submit"]{
   -webkit-box-shadow: 13px 13px 17px -7px #332A2F;
           box-shadow: 13px 13px 17px -7px #332A2F;
   cursor: pointer;
+  margin: 0 auto;
 }
 
 fieldset input[type="submit"]:hover{
@@ -301,50 +282,6 @@ fieldset input[type="submit"]:active{
           transform: scale(0.96);
 }
 
-.formLine label{
-  width: 100px;
-}
-
-.formLine input{
-  height: 1.3rem;
-}
-
-#buttons{
-  text-align: center;
-  width: auto;
-  height: auto;
-  border: none;
-  border-radius: 3px;
-  -webkit-box-shadow: 13px 13px 43px -6px #332A2F;
-          box-shadow: 13px 13px 43px -6px #332A2F;
-  background: #cecccc;
-  margin-bottom: 15px;
-}
-
-#buttons button{
-  margin: 12px 18px;
-  padding: 8px 32px;
-  color: #000;
-  font-size: 18px;
-  font-weight: bold;
-  border: none;
-  border-radius: 4px;
-  outline: none;
-  background: #FFA500;
-  cursor: pointer;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-delay: 20ms;
-          transition-delay: 20ms;
-  -webkit-transition-duration: 400ms;
-          transition-duration: 400ms;
-  -webkit-transition-timing-function: ease-in-out;
-          transition-timing-function: ease-in-out;
-}
-
-#buttons button:hover{
-  background: #FFBC5E;
-}
 
 /* animation start */
 
@@ -532,7 +469,7 @@ fieldset input[type="submit"]:active{
       -ms-flex-align: center;
           align-items: center;
   width: 30%;
-  height: 500px;
+  height: 450px;
   border-radius: 8px;
   -webkit-box-shadow: 13px 13px 43px -6px #332A2F;
           box-shadow: 13px 13px 43px -6px #332A2F;
@@ -825,7 +762,7 @@ footer p{
 
   #genImg img{
     width: 160px;
-    height: 160px;
+    height: 220px;
   }
 
   h1{
@@ -842,17 +779,17 @@ footer p{
     height: 84vh;
   }
 
-  #newForm fieldset{
-    width: 450px;
+  form{
+    width: 300px;
     height: 450px;
   }
 
-  legend{
-    font-size: 1.4rem;
+  #personalContacts{
+    width: 350px;
   }
 
-  label{
-    padding-left: 5px;
+  textarea[cols]{
+    width: 100%;
   }
 
   #about{
