@@ -170,13 +170,12 @@ h1 {
   width: var(--full-width);
   height: var(--primary-height);
   margin-top: var(--primary-margin);
-  background:
-    linear-gradient(
-      to bottom,
-      var(--color-light-slate-blue) 0%,
-      var(--color-medium-slate-blue) 0%,
-      var(--color-cornflower-blue)
-    );
+  background: linear-gradient(
+    to bottom,
+    var(--color-light-slate-blue) 0%,
+    var(--color-medium-slate-blue) 0%,
+    var(--color-cornflower-blue)
+  );
 }
 
 #contactPlace p {
@@ -239,7 +238,7 @@ fieldset .formLine:nth-child(2) {
   margin-top: 80px;
 }
 
-fieldset input[type="submit"] {
+fieldset input[type='submit'] {
   margin: 2px auto;
   padding: 8px 32px;
   color: var(--color-white);
@@ -247,29 +246,27 @@ fieldset input[type="submit"] {
   border: none;
   border-radius: 4px;
   outline: none;
-  background:
-    linear-gradient(
-      to bottom,
-      var(--color-light-slate-blue) 0%,
-      var(--color-medium-slate-blue) 30%,
-      var(--color-cornflower-blue) 100%
-    );
+  background: linear-gradient(
+    to bottom,
+    var(--color-light-slate-blue) 0%,
+    var(--color-medium-slate-blue) 30%,
+    var(--color-cornflower-blue) 100%
+  );
   box-shadow: 13px 13px 17px -7px var(--color-melanzane);
   cursor: pointer;
 }
 
-fieldset input[type="submit"]:hover {
+fieldset input[type='submit']:hover {
   color: var(--color-white-smoke);
-  background:
-    linear-gradient(
-      135deg,
-      var(--color-cornflower-blue) 0%,
-      var(--color-medium-slate-blue) 50%,
-      var(--color-light-slate-blue) 100%
-    );
+  background: linear-gradient(
+    135deg,
+    var(--color-cornflower-blue) 0%,
+    var(--color-medium-slate-blue) 50%,
+    var(--color-light-slate-blue) 100%
+  );
 }
 
-fieldset input[type="submit"]:active {
+fieldset input[type='submit']:active {
   transform: scale(0.96);
 }
 
@@ -390,20 +387,27 @@ fieldset input[type="submit"]:active {
   height: 82vh;
   min-height: 300px;
   margin-top: var(--primary-margin);
-  background:
-    linear-gradient(
-      to bottom,
-      var(--color-light-slate-blue) 0%,
-      var(--color-medium-slate-blue) 0%,
-      var(--color-cornflower-blue)
-    );
+  background: linear-gradient(
+    to bottom,
+    var(--color-light-slate-blue) 0%,
+    var(--color-medium-slate-blue) 0%,
+    var(--color-cornflower-blue)
+  );
 }
 
 #about h1 {
   color: var(--color-white);
   background: var(--color-black);
   padding: 6px 8px 40px;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
   font-family: 'Noto Serif', serif;
 }
 
@@ -478,34 +482,34 @@ th {
   display: grid;
   margin-top: var(--primary-margin);
   width: var(--full-width);
-  height: 82vh;
-  grid-template-columns: 23% 23% 23% 23%;
-  grid-template-rows: 20% 20%;
+  /* height: 100%; */
+  grid-template-columns: 30% 30% 30%;
+  /* grid-template-rows: 20% 20%; */
   justify-content: space-evenly;
   align-content: space-around;
-  background:
-    linear-gradient(
-      to bottom,
-      var(--color-light-slate-blue) 0%,
-      var(--color-medium-slate-blue) 0%,
-      var(--color-cornflower-blue)
-    );
+  background: linear-gradient(
+    to bottom,
+    var(--color-light-slate-blue) 0%,
+    var(--color-medium-slate-blue) 0%,
+    var(--color-cornflower-blue)
+  );
 }
 
 .myProject {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 200px;
+  height: 850px;
   border-radius: 3px;
   background: var(--color-white-smoke);
   overflow: hidden;
+  margin: 1rem 0;
 }
 
 .myProject h3 {
   padding: 4px 12px;
   margin-top: 10px;
-  background: var(--color-silver-sand);
+  /* background: var(--color-silver-sand); */
   color: var(--color-black);
   text-shadow: 1px 1px 1px var(--color-black);
 }
