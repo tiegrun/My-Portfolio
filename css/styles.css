@@ -113,10 +113,10 @@ nav a:active,
 /* home page Start */
 
 main {
-  /* flex-direction: row; */
+  justify-content: center;
   justify-content: space-around;
   width: var(--full-width);
-  height: 82vh;
+  height: 850px;
   min-height: 300px;
   margin-top: var(--primary-margin);
 }
@@ -129,9 +129,9 @@ main {
 }
 
 #genImg img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
+  /* width: 220px; */
+  height: 305px;
+  border-radius: 10px;
 }
 
 #content {
@@ -139,7 +139,7 @@ main {
   justify-content: center;
   line-height: 40px;
   align-items: flex-start;
-  width: 54%;
+  width: 50%;
   min-width: 270px;
   height: var(--primary-height);
 }
@@ -161,49 +161,51 @@ h1 {
 
 /* home page End */
 
-/* contact page Start , exercise 1.3 */
+/* contact page Start*/
 
-#contactPlace {
-  flex-direction: column;
-  justify-content: space-between;
+#myContact {
+  width: 100%;
+  height: 850px;
+  justify-content: center;
   align-items: center;
-  width: var(--full-width);
-  height: var(--primary-height);
-  margin-top: var(--primary-margin);
+  margin-top: 5px;
   background: linear-gradient(
     to bottom,
     var(--color-light-slate-blue) 0%,
-    var(--color-medium-slate-blue) 0%,
-    var(--color-cornflower-blue)
+    var(--color-medium-slate-blue) 30%,
+    var(--color-cornflower-blue) 100%
   );
 }
-
-#contactPlace p {
-  line-height: 30px;
+#personalContacts {
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 13px 13px 43px -6px #332a2f;
+  overflow: hidden;
 }
 
-#contactPlace p:first-child {
-  font-size: 32px;
-  font-weight: var(--primary-font-weight);
+#newestForm {
+  width: 95%;
+  height: 85%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  margin-top: 25px;
+  border: none;
 }
 
-button {
-  margin-top: 8px;
-  padding: 4px 8px;
+legend {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  border: none;
 }
 
-/* contact page End, exercise 1.3 */
-
-/* contact page Start , exercise 1.4 */
-
-#newForm {
-  width: var(--primary-width);
-  height: var(--primary-height);
-  margin-top: var(--primary-margin);
-  margin-bottom: var(--primary-margin);
-}
-
-#newForm fieldset {
+#newestForm fieldset {
   flex-direction: column;
   justify-content: center;
   width: 500px;
@@ -215,14 +217,16 @@ button {
   position: relative;
 }
 
-legend {
-  font-size: 1.8rem;
-  font-weight: var(--primary-font-weight);
-  color: var(--color-black);
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+fieldset input[type='submit'] {
+  margin: 2px auto;
+  padding: 8px 16px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  margin: 0 auto;
 }
 
 .formLine {
@@ -384,7 +388,7 @@ fieldset input[type='submit']:active {
   justify-content: space-around;
   align-items: center;
   width: var(--full-width);
-  height: 82vh;
+  height: 850px;
   min-height: 300px;
   margin-top: var(--primary-margin);
   background: linear-gradient(
@@ -476,7 +480,7 @@ th {
 
 /* about page end, exercise 1.4 */
 
-/* work page start, exercise 1.6 */
+/* work page start */
 
 #work {
   display: grid;
@@ -530,7 +534,11 @@ th {
   padding-right: 3px;
 }
 
-/* work page end, exercise 1.6 */
+.projectNames a {
+  color: var(--color-white);
+}
+
+/* work page end */
 
 footer {
   flex-direction: column;
@@ -560,8 +568,8 @@ footer p {
 
 @media all and (max-width: 1000px) and (min-width: 750px) {
   #work {
-    grid-template-columns: 45% 45%;
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 60%;
+    /* grid-template-rows: repeat(4, auto); */
     height: var(--primary-height);
     grid-gap: 15px;
     padding-top: 10px;
@@ -585,17 +593,17 @@ footer p {
     font-size: 14px;
   }
 
-  main {
-    height: 85vh;
-  }
+  /* main {
+    justify-content: center;
+  } */
 
   #genImg {
-    width: 30%;
+    width: 50%;
   }
 
   #genImg img {
-    width: 160px;
-    height: 160px;
+    width: 130px;
+    height: 150px;
   }
 
   h1 {
@@ -607,10 +615,6 @@ footer p {
   }
 
   /* home page end */
-
-  #contactPlace {
-    height: 84vh;
-  }
 
   #newForm fieldset {
     width: 450px;
@@ -627,6 +631,7 @@ footer p {
     align-items: center;
     width: var(--full-width);
     height: var(--primary-height);
+    padding-top: 1rem;
   }
 
   #aboutMe {
@@ -667,17 +672,21 @@ footer p {
     grid-template-rows: auto;
     height: var(--primary-height);
     grid-gap: 15px;
-    padding-top: 10px;
+    padding-top: 1rem;
     padding-bottom: 10px;
   }
 
   .myProject {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     height: 140px;
     background: none;
     border-bottom: 1px solid var(--color-black);
+  }
+
+  .myProject img {
+    display: none;
   }
 
   .myProject h3 {
@@ -686,6 +695,11 @@ footer p {
     background: var(--color-white);
     color: var(--color-black);
     text-shadow: none;
+  }
+
+  .myProject a {
+    background: white;
+    color: #000;
   }
 
   .projectNames {
